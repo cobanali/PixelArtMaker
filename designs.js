@@ -22,10 +22,10 @@ function makeGrid() {
   // Nested loop for creating rows and squares
   for (h = 1; h <= _N_; h++) {
     let row = document.createElement('tr');
-        grid.appendChild(row);/* Creates rows*/
+    grid.appendChild(row);/* Creates rows*/
     for (w = 1; w <= _M_; w++) {
       let square = document.createElement('td');
-            row.appendChild(square);/* Creates squares*/
+      row.appendChild(square);/* Creates squares*/
 
       // Changes square's background to selected color when clicked
       square.addEventListener('click', function(event) {
